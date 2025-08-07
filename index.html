@@ -18,14 +18,9 @@
       padding: 2rem 1rem 1rem;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin: 0.5rem 0;
-    }
-
-    p {
-      margin-bottom: 2rem;
-      color: #aaa;
+    header img.logo {
+      max-width: 250px;
+      height: auto;
     }
 
     .container {
@@ -43,6 +38,7 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
       transition: transform 0.3s;
+      background-color: #222;
     }
 
     .box:hover {
@@ -78,11 +74,11 @@
 </head>
 <body>
   <header>
-    <h1>BerryTunes</h1>
-    <p>Kompleksowa obsługa samochodów – wybierz swoją usługę:</p>
+    <img src="img/logo1.png" alt="BerryTunes logo" class="logo">
   </header>
 
   <div class="container">
+    <!-- DETAILING -->
     <div>
       <div class="box">
         <a href="http://marladyz.pl" target="_blank">
@@ -92,19 +88,21 @@
       <div class="label">Studio detailingu</div>
     </div>
 
+    <!-- MECHANIKA -->
     <div>
       <div class="box">
         <a href="http://sbrothers.pl" target="_blank">
-          <img src="img/mechanika.jpg" alt="Mechanika samochodowa">
+          <img src="sb.png" alt="Mechanika samochodowa">
         </a>
       </div>
       <div class="label">Mechanika samochodowa</div>
     </div>
 
+    <!-- CHIPTUNING -->
     <div>
       <div class="box">
         <a href="http://berrydyno.pl" target="_blank">
-          <img src="chip.png" alt="Chiptuning / Hamownia">
+          <img src="91.png" alt="Chiptuning / Hamownia">
         </a>
       </div>
       <div class="label">Chiptuning / Hamownia</div>
