@@ -30,7 +30,10 @@
       gap: 1rem;
       padding: 0 1rem 2rem;
     }
-
+    .portrait-fit {
+      object-fit: contain;
+      background-color: #000; /* lub transparent */
+}
     .box {
       width: 300px;
       height: 200px;
@@ -82,7 +85,7 @@
     <div>
       <div class="box">
         <a href="http://marladyz.pl" target="_blank">
-          <img src="marl.jpg" alt="Studio detailingu">
+          <img src="marl.jpg" alt="Studio detailingu" class="portrait-fit'>
         </a>
       </div>
       <div class="label">Studio detailingu</div>
@@ -110,4 +113,5 @@
   </div>
 </body>
 </html>
+
 
