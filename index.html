@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BerryTunes – Strona główna</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 2.5rem;
+      color: #4B0082;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .gallery a img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery a img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      .gallery a img {
+        width: 90%;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>BerryTunes – Wybierz usługę</h1>
+
+  <div class="gallery">
+    <a href="https://studio-detailing.pl" target="_blank">
+      <img src="img/detailing.jpg" alt="Studio Detailingu">
+    </a>
+    <a href="https://mechanika-samochodowa.pl" target="_blank">
+      <img src="img/mechanika.jpg" alt="Mechanika Samochodowa">
+    </a>
+    <a href="https://chiptuning.pl" target="_blank">
+      <img src="img/chip.jpg" alt="Chiptuning i Hamownia">
+    </a>
+  </div>
+
+</body>
+</html>
